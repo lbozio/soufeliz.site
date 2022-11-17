@@ -108,6 +108,26 @@ padding: 1.5vh 1.5vw 0.001vh 1.5vw;
       font-style: italic;
       text-shadow: #000000 0px 1px 0px;
     }
+ .pulse-button {  
+     -webkit-animation: pulse 1.5s infinite;
+}
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
 </style>
 <div id="division-1657813536866" class="hLuMmH0641985">
 <div class="ultrasecret-XNDDsF8703027" style="text-align:center">
@@ -265,7 +285,7 @@ urlHOT='https://go.hotmart.com/H75143579O?ap=7281'+'&utm_source='+$_GET['utm_sou
   
 </div>
 </div> <!-- Botão 1 -->
-            <div id="cta1" class="mt-4">
+            <div id="cta1" class="mt-4 pulse-button">
               <a id="hot1" href="https://go.hotmart.com/H75143579O?ap=7281" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">¡QUIERO VOLVER A PONER BIKINI Y SER FELIZ!</span>
                 <span class="span-btn2">(atención: plazas limitadas)</span>
