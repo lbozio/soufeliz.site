@@ -253,7 +253,7 @@ text-align: center;
 </h3>
       <script>
     var $_GET = {};
-    urlHOT='https://go.hotmart.com/H75143579O?ap=7281'
+    urlHOT='https://pay.hotmart.com/I74389207F?checkoutMode=10'
 if(document.location.toString().indexOf('?') !== -1) {
     var query = document.location
                    .toString()
@@ -268,7 +268,7 @@ if(document.location.toString().indexOf('?') !== -1) {
        $_GET[aux[0]] = aux[1];
     }
     //get the 'index' query parameter
-urlHOT='https://go.hotmart.com/H75143579O?ap=7281'+'&utm_source='+$_GET['utm_source']+'&utm_medium='+$_GET['utm_medium']+'&utm_campaign='+$_GET['utm_campaign']+'&utm_content='+$_GET['utm_content']+'&src='+$_GET['src']+'|'+$_GET['utm_source']+'&sck='+$_GET['utm_content'];
+urlHOT='https://pay.hotmart.com/I74389207F?checkoutMode=10'+'&utm_source='+$_GET['utm_source']+'&utm_medium='+$_GET['utm_medium']+'&utm_campaign='+$_GET['utm_campaign']+'&utm_content='+$_GET['utm_content']+'&src='+$_GET['src']+'|'+$_GET['utm_source']+'&sck='+$_GET['utm_content'];
 }
 
 
@@ -279,7 +279,7 @@ urlHOT='https://go.hotmart.com/H75143579O?ap=7281'+'&utm_source='+$_GET['utm_sou
   
 </div>
 </div> <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 ">
+            <div id="cta1" class="mt-4 d-none">
               <a id="hot1" href="https://go.hotmart.com/H75143579O?ap=7281" class="a-btn" style="text-decoration: none;">
                 <span class="span-btn">¡QUIERO VOLVER A PONER BIKINI Y SER FELIZ!</span>
                 <span class="span-btn2">(atención: plazas limitadas)</span>
@@ -536,8 +536,13 @@ Responder
 <p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
 Paola Flores
 </p>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#md").html(response.city);
+}, "jsonp");
+</script>
 <p class="text-sm leading-4 pt-0.5">
-Peso 88 kilos, he probado varias dietas pero nada funciona 😭 ¿Alguien de <span class="md"></span> que lo haya probado puede decirme si funciona?
+Peso 88 kilos, he probado varias dietas pero nada funciona 😭 ¿Alguien de <span class="md">Lima</span> que lo haya probado puede decirme si funciona?
 </p>
 </div>
 </div>
@@ -820,7 +825,12 @@ Debes iniciar sesión para dejar un comentario.
 </p>
 </div>
 </div>
-</div>
+</div>            <div id="cta2" class="mt-4 ">
+              <a id="hot2" href="https://go.hotmart.com/H75143579O?ap=7281" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">¡QUIERO VOLVER A PONER BIKINI Y SER FELIZ!</span>
+                <span class="span-btn2">(atención: plazas limitadas)</span>
+              </a>
+            </div>
 </div>
 <div class="division-1657814825221__wrapper">
 <style>
